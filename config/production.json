@@ -1,0 +1,13 @@
+{
+  "name": "Blood donation management system",
+  "server-api": {
+    "host": "localhost",
+    "port": 8001,
+    "url": "http://localhost:3001",
+    "apiUrl": "http://localhost:3001/api/v1"
+  },
+  "server-static": {
+    "host": "localhost",
+    "port": 3000
+  }
+}

@@ -1,0 +1,65 @@
+<html>
+<head>
+    <base href="/" />
+    <title>Blood donation management system</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://js.arcgis.com/3.15/esri/css/esri.css">
+    <link rel="stylesheet" href="vendor/css/bootstrap.css">
+    <link rel="stylesheet" href="build/styles/styles.css">
+
+    <!-- 1. Load libraries -->
+
+    <!-- Sockets script -->
+    <script src="build/config.js"></script>
+    <script src="vendor/lib/socket.io.js"></script>
+
+    <!-- IE required polyfills, in this exact order -->
+    <script src="vendor/lib/es6-shim.min.js"></script>
+    <script src="vendor/lib/system-polyfills.js"></script>
+
+    <script src="vendor/lib/angular2-polyfills.js"></script>
+    <script src="vendor/lib/system.js"></script>
+    <script src="vendor/lib/Rx.js"></script>
+    <script src="vendor/lib/angular2.dev.js"></script>
+    <script src="vendor/lib/router.dev.js"></script>
+
+    <!-- Map script -->
+    <script src="https://js.arcgis.com/3.15/"></script>
+
+    <!-- 2. Configure SystemJS -->
+    <script>
+        System.config({
+            packages: {
+                build: {
+                    format: 'register',
+                    defaultExtension: 'js'
+                }
+            }
+        });
+        System.import('build/main').then(null, console.error.bind(console));
+    </script>
+
+</head>
+
+<!-- 3. Display the application -->
+<body>
+
+    <blood-app>
+        <!--Loader-->
+        <div class="splash-outer">
+            <div class="splash-fade"></div>
+            <div class="spinner-outer">
+                <div class="sk-folding-cube">
+                    <div class="sk-cube1 sk-cube"></div>
+                    <div class="sk-cube2 sk-cube"></div>
+                    <div class="sk-cube4 sk-cube"></div>
+                    <div class="sk-cube3 sk-cube"></div>
+                </div>
+            </div>
+        </div>
+    </blood-app>
+
+</body>
+
+</html>
