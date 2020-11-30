@@ -27,8 +27,8 @@ app.use(function(req, res, next) {
     res.render('index.html');
 });
 
-var server = app.listen(config.get('server-static:port'), function() {
-    var host = config.get('server-static:host');
+var server = app.listen(process.env.PORT || config.get('server-static:port'), function() {
+    var host = config.get('server-static:host') || 'localhost';
     var port = server.address().port;
 
     console.log('App listening at http://%s:%s', host, port);

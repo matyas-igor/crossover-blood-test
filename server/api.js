@@ -39,8 +39,8 @@ app.use(function errorHandler(err, req, res, next) {
     next(res);
 });
 
-var server = app.listen(config.get('server-api:port'), function() {
-    var host = config.get('server-api:host');
+var server = app.listen(process.env.PORT || config.get('server-api:port'), function() {
+    var host = config.get('server-api:host') || 'localhost';
     var port = server.address().port;
 
     console.log('App listening at http://%s:%s', host, port);
