@@ -1,7 +1,7 @@
 # Blood donation management system
 
 - Real-time update on a map about available blood donations
-- Built with Bootstrap, Express, Angular2, RxJS, Esri Maps and Socket.io
+- Built with Bootstrap, Express, MongoDB, Angular2, RxJS, Esri Maps and Socket.io
 - The project was done in July 2016
 
 Live demo: https://blood-donation-web.herokuapp.com/
