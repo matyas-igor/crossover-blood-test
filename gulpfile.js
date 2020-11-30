@@ -8,9 +8,11 @@ var concat = require('gulp-concat');
 var sourcemaps = require('gulp-sourcemaps');
 
 var argv = require('yargs').argv;
-global.__environment = argv.environment || argv.e || 'development';
+global.__environment = argv.environment || argv.e || process.env.NODE_ENV || 'development';
 var nconf = require('nconf');
 nconf.argv().env().file({file: './config/'+__environment+'.json'});
+
+console.log('Environment:', __environment);
 
 // Dynamic server
 gulp.task('browser-sync', function(done) {
