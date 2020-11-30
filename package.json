@@ -35,7 +35,7 @@
     "gulp-sourcemaps": "1.6.0",
     "gulp-typescript": "2.10.0",
     "is-my-json-valid": "2.12.4",
-    "kerberos": "0.0.18",
+    "kerberos": "1.0.0",
     "lodash": "4.2.1",
     "mongojs": "2.3.0",
     "morgan": "1.6.1",
