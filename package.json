@@ -63,6 +63,6 @@
     "lite-server": "2.0.1"
   },
   "engines": {
-    "node": "8.x"
+    "node": "4.x"
   }
 }
