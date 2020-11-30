@@ -1,4 +1,4 @@
-# Blood donation management system
+# 👨‍⚕️💉 Blood donation management system
 
 - Real-time update on a map about available blood donations
 - Built with Bootstrap, Express, MongoDB, Angular2, RxJS, Esri Maps and Socket.io
