@@ -1,6 +1,6 @@
 var mongojs = require('mongojs');
 var _ = require('lodash');
-var db = mongojs('blood', ['users']);
+var db = mongojs('mongodb://igor:9HnLWf4LVWkcTyAj@cluster-shard-00-00.jacuj.mongodb.net:27017,cluster-shard-00-01.jacuj.mongodb.net:27017,cluster-shard-00-02.jacuj.mongodb.net:27017/blood?ssl=true&replicaSet=atlas-lbsakx-shard-0&authSource=admin&retryWrites=true&w=majority', ['users']);
 var Q = require("q");
 
 var UsersModel = {
