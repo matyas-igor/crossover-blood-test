@@ -2,6 +2,7 @@
 
 - Real-time update on a map about available blood donations
 - Built with Bootstrap, Express, Angular2, RxJS, Esri Maps and Socket.io
+- Project was done on July 2016
 
 Live demo: https://blood-donation-web.herokuapp.com/
 
