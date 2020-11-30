@@ -1,7 +1,6 @@
 import {Component, Input, OnChanges} from 'angular2/core';
 import {User} from './../../services/user-service';
 import {Fade} from './../utils/fade.directive';
-import Notification = Rx.Notification;
 import {Notifications} from "../../services/notifications-factory";
 
 @Component({

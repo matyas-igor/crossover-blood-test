@@ -8,7 +8,7 @@ var concat = require('gulp-concat');
 var sourcemaps = require('gulp-sourcemaps');
 
 var argv = require('yargs').argv;
-GLOBAL.__environment = argv.environment || argv.e || 'development';
+global.__environment = argv.environment || argv.e || 'development';
 var nconf = require('nconf');
 nconf.argv().env().file({file: './config/'+__environment+'.json'});
 
@@ -34,7 +34,8 @@ gulp.task('compile', function(){
             "emitDecoratorMetadata": true,
             "experimentalDecorators": true,
             "removeComments": false,
-            "noImplicitAny": false
+            "noImplicitAny": false,
+            "strict": false
         }))
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('./public/build'));

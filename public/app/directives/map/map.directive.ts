@@ -2,7 +2,6 @@ import {Component, Input} from 'angular2/core';
 import {User} from './../../services/user-service';
 import {UserPoint} from './../../directives/users/user-point.directive';
 import {Notifications} from "../../services/notifications-factory";
-import getLineAndCharacterOfPosition = ts.getLineAndCharacterOfPosition;
 import {Socket} from "../../services/socket-factory";
 
 declare var require:any;
