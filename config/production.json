@@ -3,8 +3,8 @@
   "server-api": {
     "host": "localhost",
     "port": 8001,
-    "url": "http://localhost:3001",
-    "apiUrl": "http://localhost:3001/api/v1"
+    "url": "https://blood-donation-web.herokuapp.com",
+    "apiUrl": "https://blood-donation-web.herokuapp.com/api/v1"
   },
   "server-static": {
     "host": "localhost",
