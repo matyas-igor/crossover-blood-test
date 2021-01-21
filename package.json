@@ -49,7 +49,7 @@
     "run-sequence": "1.1.5",
     "rx": "4.0.7",
     "rxjs": "5.0.0-beta.1",
-    "socket.io": "1.4.5",
+    "socket.io": "2.4.0",
     "systemjs": "0.19.20",
     "tsd": "0.6.5",
     "typescript": "1.7.5",
